@@ -11,6 +11,7 @@ abstract class AbstractFactory {
   createProduct func(owner) Product
   registerProduct func(Product)
   __
+  Create() Product
 }
 class IDCard {
   owner string
