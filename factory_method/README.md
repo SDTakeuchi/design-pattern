@@ -3,8 +3,8 @@
 ```
 $ go run main.go
 
-card registered for Matisse
-card used: owner name: Matisse
-card registered for Sadko
-card used: owner name: Sadko
+id card registered for Matisse
+id card used: owner name: Matisse
+id card registered for Sadko
+id card used: owner name: Sadko
 ```
