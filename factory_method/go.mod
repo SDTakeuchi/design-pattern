@@ -1,3 +1,3 @@
-module factory5
+module factory
 
 go 1.18

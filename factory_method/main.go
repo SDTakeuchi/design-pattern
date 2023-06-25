@@ -1,7 +1,7 @@
 package main
 
 import (
-	"factory5/impl"
+	"factory/impl"
 )
 
 func main() {

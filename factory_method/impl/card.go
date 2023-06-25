@@ -1,7 +1,7 @@
 package impl
 
 import (
-	"factory5/domain"
+	"factory/domain"
 	"fmt"
 )
 

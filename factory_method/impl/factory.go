@@ -3,7 +3,7 @@ package impl
 import (
 	"fmt"
 
-	"factory5/domain"
+	"factory/domain"
 )
 
 type idCardFactory struct {
