@@ -5,11 +5,11 @@ import (
 )
 
 func main() {
-	factory := impl.NewIDCardFactory()
+	idCardFactory := impl.NewIDCardFactory()
 
-	idcard1 := factory.Create("Matisse")
+	idcard1 := idCardFactory.Create("Matisse")
 	idcard1.Use()
 
-	idcard2 := factory.Create("Sadko")
+	idcard2 := idCardFactory.Create("Sadko")
 	idcard2.Use()
 }

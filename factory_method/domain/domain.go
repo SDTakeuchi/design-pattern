@@ -10,7 +10,7 @@ type (
 	}
 	AbstractFactory struct {
 		// AbstractFactoryのメソッドを直接叩かれたくないのでPrivate
-		// 叩くなら具象クラスの方を叩いてほしい
+		// あくまでCreate()の中で使われるメソッドのため直接叩かれる想定ではない
 		createProduct   func(owner string) Product
 		registerProduct func(p Product)
 	}
