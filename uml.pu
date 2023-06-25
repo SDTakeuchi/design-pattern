@@ -1,0 +1,33 @@
+@startuml
+
+interface Product {
+  Owner() string
+  Use()
+}
+interface Factory {
+  Create() Product
+}
+abstract class AbstractFactory {
+  createProduct func(owner) Product
+  registerProduct func(Product)
+  __
+}
+class IDCard {
+  owner string
+  Owner() string
+  Use()
+}
+class IDCardFactory {
+  abstractFactory
+  Create() IDCard
+}
+
+IDCardFactory - IDCard : creates >
+Product - Factory : < creates
+
+Product <|.. IDCard
+
+AbstractFactory *-- IDCardFactory
+Factory <|.. AbstractFactory
+
+@enduml
